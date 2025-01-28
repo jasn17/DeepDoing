@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <button id="theme-toggle">🌓</button>
+    <div class="container">
+        <form id="todo-form">
+            <input type="text" id="title" placeholder="Task Title" required>
+            <textarea id="description" placeholder="Task Description"></textarea>
+            <select id="priority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <input type="date" id="due-date">
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="../app/script.js"></script>
+</body>
+</html>
